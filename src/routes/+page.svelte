@@ -22,7 +22,7 @@
   
   <main class="font-sans mx-auto">
     <header class="bg-liverpool p-3 flex justify-center items-center">
-      <img src="/images/liverpool-logo.svg" alt="Liverpool Logo" class="max-w-[200px]" />
+      <img src="/images/liverpool-logo.svg" alt="Liverpool Logo" class="max-h-[70px] md:max-h-[100px]" />
     </header>
 
     <section class="flex justify-center items-center py-4 border-b-2 mb-6">
