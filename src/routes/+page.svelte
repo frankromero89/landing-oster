@@ -35,9 +35,16 @@
             <img src="/images/banner-mobile.jpg" alt="Oster Equipa tu espacio favorito del hogar" class="w-full block md:hidden" />
             <div class="bg-gray-100 flex flex-col md:flex-row justify-between items-center mt-3 py-2 px-8 w-full">
                 <p class="text-center mb-2 text-xs md:mb-0 md:ml-20 md:text-base font-medium">Registra tus tickets de compra, participa y podrías ganar </p>
+                {#if !showRegistrationForm}
                 <button on:click={toggleRegistrationForm} class="text-sm md:text-base bottom-5 right-5 bg-liverpool text-white py-1 px-4 rounded hover:bg-[#c4006b] transition-colors">
                     Registrar un ticket
                 </button>
+                {:else}
+                    <button on:click={toggleRegistrationForm} class="text-sm md:text-base bg-[#e6007e] text-white py-1 px-4 rounded hover:bg-[#c4006b] transition-colors">
+                        Regresar
+                    </button>
+                {/if}
+                
             </div>
             <section class="text-center mt-10  w-[80%]">
                 <h2 class="text-2xl font-medium mb-5"><span class="text-[#ce2c95]">REGÍSTRATE,</span> GANAR ES MUY FÁCIL</h2>
